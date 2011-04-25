@@ -1,10 +1,10 @@
 
 public class ExclusionZoneRectangle extends ExclusionZone {
-	int secondX       = 0;
-	int secondZ       = 0;
+	double secondX       = 0;
+	double secondZ       = 0;
 	double probability = 0;
 
-	public ExclusionZoneRectangle(int newX, int newZ, boolean authoritative, String[] data) {
+	public ExclusionZoneRectangle(double newX, double newZ, boolean authoritative, String[] data) {
 		type            = "Line";
 		x               = newX; 
 		z               = newZ;
@@ -13,8 +13,8 @@ public class ExclusionZoneRectangle extends ExclusionZone {
 		// TODO: Check for correct number of arguments
 		
 		// Data: X,Z,Probability
-		secondX     = Integer.parseInt(data[0]);
-		secondZ     = Integer.parseInt(data[1]);
+		secondX     = Double.parseDouble(data[0]);
+		secondZ     = Double.parseDouble(data[1]);
 		probability = Double.parseDouble(data[2]);
 	}
 

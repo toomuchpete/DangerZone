@@ -8,7 +8,7 @@ public class DangerZone extends Plugin
 {
 	// Base Plugin Variables
 	private static String name = "DangerZone";
-	private static String version = "0.23";
+	private static String version = "0.24";
 	private boolean debug = false;
 	static final Logger log = Logger.getLogger("Minecraft");
 	private Random randGen;

@@ -6,7 +6,7 @@ public class ExclusionZoneLine extends ExclusionZone {
 	double  outerProbability = 0;
 
 	
-	public ExclusionZoneLine(int newX, int newZ, boolean authoritative, String[] data) {
+	public ExclusionZoneLine(double newX, double newZ, boolean authoritative, String[] data) {
 		type            = "Line";
 		x               = newX; 
 		z               = newZ;

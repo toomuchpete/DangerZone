@@ -5,7 +5,7 @@ public class ExclusionZoneRing extends ExclusionZone {
 	double innerProbability = 0;
 	double outerProbability = 0;
 	
-	ExclusionZoneRing(int newX, int newZ, boolean authoritative, String[] data) {
+	ExclusionZoneRing(double newX, double newZ, boolean authoritative, String[] data) {
 		type            = "Ring";
 		x               = newX; 
 		z               = newZ;

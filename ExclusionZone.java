@@ -3,8 +3,8 @@ import java.util.Arrays;
 public abstract class ExclusionZone
 {
 	public boolean isAuthoritative = false;
-	public int x = 0;
-	public int z = 0;
+	public double x = 0;
+	public double z = 0;
 	public String type = "Abstract";
 	
 	public abstract String toString();
@@ -34,8 +34,8 @@ public abstract class ExclusionZone
 		
 		String desiredType = s[0];
 		boolean thisAuth = s[1].equalsIgnoreCase("yes");
-		int thisX = Integer.parseInt(s[2]);
-		int thisZ = Integer.parseInt(s[3]);
+		double thisX = Double.parseDouble(s[2]);
+		double thisZ = Double.parseDouble(s[3]);
 		
 		String[] data;
 		if (s.length > 4) {
